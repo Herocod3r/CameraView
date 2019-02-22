@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 
 
 
-namespace Abstractions
+namespace CameraView.Abstractions
 {
 
     public delegate void CameraFrameDelegate(byte[] frame);
@@ -18,7 +18,7 @@ namespace Abstractions
 
         Task StopAsync();
 
-        Task SnapAsync();
+        Task<byte[]> SnapAsync();
 
         CameraType Type { get; }
 
