@@ -20,7 +20,9 @@ namespace CameraView.Abstractions
 
         Task<byte[]> SnapAsync();
 
-        CameraType Type { get; }
+        CameraType Type { get; set; }
+
+        //CameraOrientation Orientation { get; set; }
 
         bool IsRunning { get; }
 

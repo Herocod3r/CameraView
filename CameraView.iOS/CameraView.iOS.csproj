@@ -70,6 +70,16 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CameraView\CameraView.csproj">
+      <Project>{CE7926D1-749A-4418-913C-5D6B0D55A43B}</Project>
+      <Name>CameraView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Abstractions\Abstractions.csproj">
+      <Project>{2AE50DB1-029F-4879-AD41-AACCE1D063E5}</Project>
+      <Name>Abstractions</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.3.5.0.169047\build\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.3.5.0.169047\build\Xamarin.Forms.targets')" />
 </Project>
